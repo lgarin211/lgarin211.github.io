@@ -451,8 +451,18 @@
               ['PPTI BCA','./assets/img/portfolio/pp (2).jpg','gal','Berfoto Di Galery BCA Lerning Institude'], 
               ['Foto Gunung Salah','./assets/img/portfolio/pp (3).jpg','gal','Berfoto Dengan Background Gunung Salak'], 
               ['Berdiam Dalam Kumpulan Orang-Orang Hebat','./assets/img/portfolio/pp (5).jpg','gal','berfoto Bersama Semua Teman Teman Hebatku'], 
+              ['Berdiam Kisah Mahasiswa','./assets/img/portfolio/pp (6).jpg','gal','berfoto Orang Orang Kotak'], 
+              ['x','./assets/img/portfolio/wa (1).jpg','gal','x'], 
+              ['x','./assets/img/portfolio/wa (2).jpg','gal','x'], 
+              ['x','./assets/img/portfolio/wa (3).jpg','gal','x'], 
+              ['x','./assets/img/portfolio/wa (4).jpg','gal','x'], 
+              ['x','./assets/img/portfolio/wa (5).jpg','gal','x'], 
+              ['x','./assets/img/portfolio/wa (6).jpg','gal','x'], 
+              ['x','./assets/img/portfolio/wa (7).jpg','gal','x'], 
+              ['x','./assets/img/portfolio/wa (8).jpg','gal','x'], 
+              ['x','./assets/img/portfolio/wa (9).jpg','gal','x'], 
             ]
-
+    van=van.sort(() => Math.random() - 0.5)
     for (let i = 0; i < van.length; i++) {
     bal=van[i]
       balm=balm+`
@@ -463,7 +473,7 @@
           <h4>`+bal[0]+`</h4>
           <p>`+bal[3]+`</p>
           <div class="portfolio-links">
-            <a href="`+bal[1]+`" data-gallery="portfolioGallery" class="portfolio-lightbox" title="`+i+`"><i class="bx bx-plus"></i></a>
+            <a href="`+bal[1]+`" target="_blank" data-gallery="portfolioGallery" class="portfolio-lightbox" title="`+i+`"><i class="bx bx-plus"></i></a>
           </div>
         </div>
       </div>
