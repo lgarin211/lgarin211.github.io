@@ -78,7 +78,7 @@ let tail = {};
     }
        
     webgl.texturesOptions = [
-        { index: 1, texture: "image", quote: 'Semangat LABnya Mastah <span style="font-style: italic; font-size: 1.4rem; color:#ED760D">MASTAHKU<span>', threshold: 20, random: 4.0, depth: 30.0, size: 1.7, square: 0 },
+        { index: 1, texture: "image", quote: 'Semangat LABnya <span style="font-style: italic; font-size: 1.4rem; color:#ED760D">MASTAHKU<span>', threshold: 20, random: 4.0, depth: 30.0, size: 1.7, square: 0 },
         { index: 2, texture: "image", quote: 'Tuhan Terimakasih karena Hariku Selalu ada <span style="font-style: italic; font-size: 1.4rem; color:#ED760D">MASTAHKU<span>', threshold: 20, random: 4.0, depth: 30.0, size: 1.7, square: 0 },
         // { index: 3, texture: "image", quote: 'Tuhan Terimakasih karena Hariku Selalu ada Mastahku', threshold: 20, random: 4.0, depth: 30.0, size: 1.7, square: 0 },
         // { index: 4, texture: "image", quote: 'Tuhan Terimakasih karena Hariku Selalu ada Mastahku', threshold: 20, random: 4.0, depth: 30.0, size: 1.7, square: 0 },
