@@ -21,7 +21,7 @@ nav > a {
 }
 
 nav > a:hover {
-  color: white;
+  color: red;
 }
 
 nav > a > span {
@@ -33,8 +33,8 @@ nav > a > span {
 }
 
 nav > a:hover > span {  
-  border-top-color: white;
-  border-bottom-color: white;
+  border-top-color: red;
+  border-bottom-color: red;
 }
 
 nav > a > img {
@@ -99,7 +99,7 @@ body.menu-toggled > .meta-link > span {
 }
 
 .meta-link > span {
-  color: white;
+  color: red;
   font-family: "Rubik", sans-serif;
   font-weight: 500;
 }
