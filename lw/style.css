@@ -21,7 +21,7 @@ nav > a {
 }
 
 nav > a:hover {
-  color: red;
+  color: pink;
 }
 
 nav > a > span {
@@ -33,8 +33,8 @@ nav > a > span {
 }
 
 nav > a:hover > span {  
-  border-top-color: red;
-  border-bottom-color: red;
+  border-top-color: pink;
+  border-bottom-color: pink;
 }
 
 nav > a > img {
@@ -43,7 +43,7 @@ nav > a > img {
   transform: translate(-50%, -50%) scale(0.5);
   transition: transform 250ms, opacity 250ms;
   pointer-events: none;
-  width: min(40vw, 500px);
+  width: min(80vw, 500px);
 }
 
 nav > a:hover > img {
@@ -99,7 +99,7 @@ body.menu-toggled > .meta-link > span {
 }
 
 .meta-link > span {
-  color: red;
+  color: pink;
   font-family: "Rubik", sans-serif;
   font-weight: 500;
 }
