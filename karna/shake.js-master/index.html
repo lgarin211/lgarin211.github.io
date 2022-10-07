@@ -17,23 +17,23 @@ body {
 <script type="text/javascript" src="shake.js"></script>
 </head>
 <body>
-<h1>Shake to Undo</h1>
-<h2>for your mobile web app</h2>
+<h1>Shake </h1>
+<!-- <h2>for your mobile web app</h2>
 <p>Shake your iPhone/iPad to see a custom action.</p>
 <p>Works on iOS +4.2.1, Android 4.0.3 (default browser), Opera Mobile (Android), BlackBerry PlayBook 2.0</p>
-<p><a href="http://dev.w3.org/geo/api/spec-source-orientation">W3C DeviceOrientation Event Specification</a></p>
+<p><a href="http://dev.w3.org/geo/api/spec-source-orientation">W3C DeviceOrientation Event Specification</a></p> -->
 
 <div>
     <audio id="myAudio">
         <!-- <source src="horse.ogg" type="audio/ogg"> -->
-        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+        <source src="./al.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
       </audio>
       
-      <p>Click the buttons to play or pause the audio.</p>
+      <!-- <p>Click the buttons to play or pause the audio.</p>
       
       <button onclick="playAudio()" type="button">Play Audio</button>
-      <button onclick="pauseAudio()" type="button">Pause Audio</button> 
+      <button onclick="pauseAudio()" type="button">Pause Audio</button>  -->
 
 </div>
 <script type="text/javascript">
@@ -48,7 +48,7 @@ window.onload = function() {
         playAudio();
         setTimeout(() => {
             pauseAudio();
-        }, 1000);
+        }, 3000);
     }
 
     var x = document.getElementById("myAudio"); 
