@@ -55,7 +55,7 @@
                         <h2 class="text-center col-12">
                             Cari
                         </h2>
-                        <input type="text" autofocus name="" id="" class="ml-2 mr-2 form form-control">
+                        <input type="text" autofocus oninput="feeddata()" id="inp" class="ml-2 mr-2 form form-control">
                     </div>
                 </div>
             </div>
@@ -63,25 +63,10 @@
         <!-- <div class="section full mt-2 container">
         
         </div> -->
-        <div class="section mt-2">
+        <div class="section mt-2" id="tag">
             <h2>Paket : </h2>
             <hr>
             <!-- item -->
-            <div class="card cart-item mb-2">
-                <div class="card-body">
-                    <div class="in">
-                        <div class="text">
-                            <h3 class="title">Nama Penerima</h3>
-                            <p class="detail">Resi</p>
-                            <strong class="price">Lokasi</strong>
-                        </div>
-                    </div>
-                    <div class="cart-item-footer">
-                        <a href="#" class="btn btn-outline-secondary btn-sm btn-primary">Claim</a>
-                    </div>
-                </div>
-            </div>
-
             <div class="card cart-item mb-2">
                 <div class="card-body">
                     <div class="in">
@@ -153,7 +138,48 @@
     <script src="assets/js/plugins/jquery-circle-progress/circle-progress.min.js"></script>
     <!-- Base Js File -->
     <script src="assets/js/base.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.1.3/axios.min.js"></script>
+    <script>
+        function corta(data) {
+            var htm=''
+            data.forEach(tag => {
+                console.log(tag)
+                htm+=`
+                    <div class="card cart-item mb-2">
+                        <div class="card-body">
+                            <div class="in">
+                                <div class="text">
+                                    <h3 class="title">Nama : ${tag.owner}</h3>
+                                    <p class="detail">${tag.awb}</p>
+                                    <strong class="price">${tag.expedition}</strong>
+                                </div>
+                            </div>
+                            <div class="cart-item-footer">
+                                <a href="#" class="btn btn-outline-secondary btn-sm btn-secondary">Claimed</a>
+                            </div>
+                        </div>
+                    </div>
+                    `
+            });
+            document.getElementById("tag").innerHTML=htm
+        }
 
+        function feeddata(pin){
+            var requestOptions = {
+                method: 'GET',
+                redirect: 'follow'
+            };
+            var p=document.getElementById("inp").value;
+            fetch("http://172.16.111.36:3000/api/get_package_json/"+p, requestOptions)
+            .then(response => response.json())
+            .then(
+                result => corta(result)
+                )
+            .catch(error => console.log('error', error));
+        }
+        feeddata()
+
+    </script>
 
 </body>
 
