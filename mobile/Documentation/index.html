@@ -1,0 +1,541 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Documentation</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mobilekit HTML Mobile UI Kit">
+    <meta name="keywords" content="bootstrap, mobile template, cordova, phonegap, mobile, html, responsive" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="assets/img/favicon.png" sizes="32x32">
+    <link rel="shortcut icon" href="assets/img/favicon.png">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo-wrapper">
+            <h1>Mobilekit</h1>
+        </div>
+    </nav>
+
+    <!-- page wrapper -->
+    <div id="page-wrapper">
+
+        <!-- sidebar -->
+        <div id="sidebar">
+            <div class="fixed-sidebar">
+                <ul class="sidebar-group">
+                    <li class="title">Welcome</li>
+                    <li><a href="#introduction">Introduction</a></li>
+                </ul>
+                <ul class="sidebar-group">
+                    <li class="title">Getting Started</li>
+                    <li><a href="#theme-files">Theme Files</a></li>
+                    <li><a href="#includes">Includes</a></li>
+                    <li><a href="#compiling-sass-file">Compiling Sass File</a></li>
+                </ul>
+                <ul class="sidebar-group">
+                    <li class="title">Editing</li>
+                    <li><a href="#colors">Colors</a></li>
+                    <li><a href="#font">Font</a></li>
+                </ul>
+                <ul class="sidebar-group">
+                    <li class="title">PWA Settings</li>
+                    <li><a href="#pwa">Getting Started</a></li>
+                    <li><a href="#manifest">Manifest.json</a></li>
+                    <li><a href="#service-worker">Service Worker</a></li>
+                    <li><a href="#add-to-home-screen">Add to Home Screen</a></li>
+                </ul>
+                <ul class="sidebar-group">
+                    <li class="title">Credits</li>
+                    <li><a href="#images">Images</a></li>
+                    <li><a href="#icons">Icons</a></li>
+                    <li><a href="#fonts">Fonts</a></li>
+                    <li><a href="#plugins">Plugins</a></li>
+                </ul>
+                <ul class="sidebar-group">
+                    <li class="title">Need Help?</li>
+                    <li><a href="#support">Support</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- * sidebar -->
+
+        <!-- content -->
+        <div id="content-container">
+            <div class="content" id="introduction">
+
+                <h1 class="page-title">Introduction</h1>
+                <div class="subtitle">
+                    Thanks for your purchase.😊
+                </div>
+                <p class="mb-4">
+                    You don't need any introduction to use this theme.
+                    This is HTML, CSS, Javascript UI Kit template designed for
+                    mobile devices.
+                    Feel free to convert it for WordPress or backend project.
+                </p>
+                <p>
+                    We recommend to you edit this template on a local server. If you don't, please remove service worker
+                    "if
+                    block" on <code>assets/js/base.js</code> while editing out of local server. You can add it
+                    later.<br>
+                    base.js file may not work properly if you won't delete it.
+                    <br><br>
+                    If you are using Visual Studio Code, this plugin will solve your local server needs.<br>
+                    <a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer"
+                        target="_blank">Live Server for Visual Studio Code</a>
+                    <br>
+                    <br>
+                </p>
+
+                <h3 class="block-title">What can i do with this template?</h3>
+                <ul>
+                    <li>Create a mobile version of your website</li>
+                    <li>Use with Cordova / Phonegap to create mobile apps for iOS & Androids</li>
+                    <li>Make mobile apps with Webview</li>
+                    <li>Use in your PWA projects</li>
+                    <li>Do whatever you like.</li>
+                </ul>
+
+                <div class="section mt-5" id="theme-files">
+                    <h4 class="section-subtitle">GETTING STARTED</h4>
+                    <h2 class="section-title">Theme Files</h2>
+                    <div class="block">
+                        <h3 class="block-title">HTML Files</h3>
+                        <p>
+                            All html pages are categorized by type.
+                            <ul>
+                                <li>
+                                    <strong>app-.....html</strong> : application page
+                                </li>
+                                <li>
+                                    <strong>page-.....html</strong> : basic pages
+                                </li>
+                                <li>
+                                    <strong>component-.....html</strong> : component
+                                </li>
+                            </ul>
+                        </p>
+                    </div>
+                    <div class="block">
+                        <h3 class="block-title">CSS File</h3>
+                        <p>
+                            We are using Sass to being more organised on CSS. You can edit Mobilekit with sass files in
+                            <code>assets/sass</code>.
+                            You can find the main css file as <code>assets/css/style.css</code>.
+                            <br>
+                            Also bootstrap main css file and plugin css files moved to <code>assets/css/inc</code> with
+                            version 2.1.
+                        </p>
+                    </div>
+                    <div class="block">
+                        <h3 class="block-title">Sass Files</h3>
+                        <p>
+                            With power of sass this template is really organised.
+                            sass path : <code>assets/sass</code>
+                        </p>
+                        <ul>
+                            <li>
+                                <strong>style.scss :</strong> Main sass file.
+                            </li>
+                            <li>
+                                <strong>_body.scss :</strong> Global body settings
+                            </li>
+                            <li>
+                                <strong>_theme-settings.scss :</strong> Theme settings. Change colors, fonts and other
+                                variables.
+                            </li>
+                            <li>
+                                <strong>_darkmode.scss :</strong> Dark mode edits.
+                            </li>
+                            <li>
+                                <strong>_ui-framework.scss :</strong> Our mobile based ui kit framework imports
+                            </li>
+                            <li>
+                                <strong>framework/ :</strong> Every ui kit framework sass files.
+                            </li>
+                            <li>
+                                <strong>section/ :</strong> Layout sections of template
+                                <ul>
+                                    <li>
+                                        <strong>_header.scss :</strong> App Headers
+                                    </li>
+                                    <li>
+                                        <strong>_bottomMenu.scss :</strong> App Bottom Menu
+                                    </li>
+                                    <li>
+                                        <strong>_content.scss :</strong> App content
+                                    </li>
+                                    <li>
+                                        <strong>_footer.scss :</strong> App footer
+                                    </li>
+                                    <li>
+                                        <strong>_sidebar.scss</strong> Sidebar / Sidenav
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="block">
+                        <h3 class="block-title">Javascript Files</h3>
+                        <p>
+                            Path : <code>assets/js</code>
+                        </p>
+                        <ul>
+                            <li>
+                                <strong>base.js :</strong> base javascript file for all features.
+                            </li>
+                            <li>
+                                <strong>/lib :</strong> Javascript libraries. (jQuery and Bootstrap)
+                            </li>
+                            <li>
+                                <strong>/plugins :</strong> Javascript plugins.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+                <div class="section" id="includes">
+                    <h4 class="section-subtitle">GETTING STARTED</h4>
+                    <h2 class="section-title">Includes</h2>
+                    <div class="block">
+                        <h3 class="block-title">CSS Files</h3>
+                        <p>
+                            <code>assets/css/style.css</code> - All sass files compiled to this. This is the only css
+                            file theme using.
+                        </p>
+                    </div>
+                    <div class="block">
+                        <h3 class="block-title">Javascript Files</h3>
+                        <p>
+                            You can take a look javascript files bottom of html page.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="section" id="compiling-sass-file">
+                    <h4 class="section-subtitle">GETTING STARTED</h4>
+                    <h2 class="section-title">Compiling Sass File</h2>
+                    After you edit sass files, just compile <code>assets/sass/style.scss</code> to
+                    <code>assets/css/style.css</code>. No need others.
+                    <br><br>
+                    <h3 class="block-title">First time on Sass?</h3>
+                    Learn more about sass : <a href="https://sass-lang.com/" target="_blank">Sass official
+                        website</a>.
+                    <br><br>
+                    <h3 class="block-title">How to compile sass files for beginners?</h3>
+                    <p>
+                        You can use apps to compile sass files to css files.<br>
+                        One of the best of them is Koala. It is free and open-source.<br>
+                        <a href="http://koala-app.com/" target="_blank">Koala App</a><br>
+                        Download the app and compile assets/sass/style.scss to assets/css/style.css. (You can edit the
+                        source map after compile)
+                    </p>
+                    <p>
+                        You can check the others apps for compile at applications section.
+                        <a href="https://sass-lang.com/install" target="_blank">https://sass-lang.com/install</a>
+                    </p>
+                </div>
+
+                <div class="section" id="colors">
+                    <h4 class="section-subtitle">Editing</h4>
+                    <h2 class="section-title">Colors</h2>
+                    <p>
+                        You can easily edit the colors with sass.
+                    </p>
+                    <ul>
+                        <li>Open <code>asset/sass/_theme-settings.scss</code></li>
+                        <li>Edit color variables.</li>
+                        <li>Compile style.scss to <code>assets/css/style.css</code></li>
+                    </ul>
+                    Descriptions is available next to variable.
+                </div>
+
+                <div class="section" id="font">
+                    <h4 class="section-subtitle">Editing</h4>
+                    <h2 class="section-title">Font</h2>
+                    <ol>
+                        <li>
+                            Find a font in Google Fonts and copy the import url
+                        </li>
+                        <li>
+                            Open the <code>asset/sass/_theme-settings.scss</code>
+                        </li>
+                        <li>
+                            Go to font section
+                        </li>
+                        <li>
+                            Paste the import url
+                        </li>
+                        <li>
+                            Change the <code>$fontFamily</code> value.
+                        </li>
+                        <li>
+                            Compile the sass files.
+                        </li>
+                    </ol>
+
+                    Do not forget to update font weights if your new font are different from the current weights.
+                    <br><br>
+                    Also, you can change the sizes, line-heights and letter spacing.
+
+                </div>
+
+
+                <div class="section" id="pwa">
+                    <h4 class="section-subtitle">PWA Settings</h4>
+                    <h2 class="section-title">Getting Started</h2>
+
+                    <div class="block">
+                        <h3 class="block-title">PWA Ready</h3>
+                        <p>
+                            This template is PWA Ready. Which mean users can add to home screen and use it like an app.
+                        </p>
+                    </div>
+                    <div class="block">
+                        <h3 class="block-title">Edit First</h3>
+                        <p>
+                            First of all, edit your theme colors and app icons.
+                        </p>
+                        <p>
+                            You can find all the app icons in <code>assets/img/icon</code> path.
+                        </p>
+                    </div>
+
+                    <div class="block">
+                        <h3 class="block-title">Theme Color</h3>
+                        <p>
+                            In manifest.json file, you will see <code>theme_color</code> and
+                            <code>background_color</code>.
+                            Edit these hex color codes what you like.
+                        </p>
+                        <p>
+                            After that, edit the metatag color code. You can find it in <strong>head</strong> tag of
+                            html pages.<br>
+                            <code>meta name="theme-color" content="#000000"</code>
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="section" id="manifest">
+                    <h4 class="section-subtitle">PWA Settings</h4>
+                    <h2 class="section-title">Manifest.json</h2>
+                    <p>
+                        Open <code>/manifest.json</code> and edit the infos and names..
+                    </p>
+                    <table class="table table-bordered">
+                        <tr>
+                            <td><code>"name"</code></td>
+                            <td>Your app name</td>
+                        </tr>
+                        <tr>
+                            <td><code>"short_name"</code></td>
+                            <td>Your app short name</td>
+                        </tr>
+                        <tr>
+                            <td><code>"start_url"</code></td>
+                            <td>
+                                <strong>Tells the browser where your application should start when it is
+                                    launched</strong>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><code>"scope"</code></td>
+                            <td>Defines the set of URLs that the browser considers to be within your app</td>
+                        </tr>
+                        <tr>
+                            <td><code>"background_color"</code></td>
+                            <td>Splash screen background color</td>
+                        </tr>
+                        <tr>
+                            <td><code>"theme_color"</code></td>
+                            <td>Sets the color of the tool bar</td>
+                        </tr>
+                    </table>
+
+                </div>
+
+
+                <div class="section" id="service-worker">
+                    <h4 class="section-subtitle">PWA Settings</h4>
+                    <h2 class="section-title">Service Worker</h2>
+                    <p>
+                        You can find service worker as <code>/service-worker.js</code>.
+                    </p>
+                    <p>
+                        Do not forget to update cache name (CACHE_NAME) after updating the REQUIRED_FILES. <br>Example: cache-version-1 to cache-version-2
+                    </p>
+                    <h5>Usage examples</h5>
+                    <p>
+                        You can find dozens of practical, detailed, and working examples of service worker usage on <a
+                            href="https://github.com/mozilla/serviceworker-cookbook" target="_blank">ServiceWorker
+                            Cookbook</a>.
+                    </p>
+                </div>
+
+                <div class="section" id="add-to-home-screen">
+                    <h4 class="section-subtitle">PWA Settings</h4>
+                    <h2 class="section-title">Add to Home Screen</h2>
+                    <p>
+                        With this component, you can show users a warning for add to home screen. There are separate
+                        alerts for android and ios.
+                    </p>
+                    <p>
+                        Open <code>/component-add-to-home.html</code> file, you will see the introductions.
+                    </p>
+                    <p>
+                        Don't forget to copy the html codes of the warnings you will use and paste them into the page
+                        you
+                        will use.
+                    </p>
+                    <p>
+                        These codes only work on mobile phone browsers. If the user has added your application to the
+                        phone on their home screen, these codes will not work and the user will not see the warnings.
+
+                    </p>
+                </div>
+
+                <div class="section" id="images">
+                    <h4 class="section-subtitle">CREDITS</h4>
+                    <h2 class="section-title">Images</h2>
+                    <h3 class="block-title">Images</h3>
+                    <p>
+                        All images are from <a href="https://unsplash.com" target="_blank">unsplash.com</a> and
+                        used for demo purpose and not include in the purchase packages.
+                    </p>
+                    <br>
+                    <h3 class="block-title">Illustration</h3>
+                    <p>
+                        All illustrations are from <a href="https://www.drawkit.io/" target="_blank">drawkit.io</a> and
+                        used for demo purpose and not include in the purchase packages.
+                    </p>
+                </div>
+
+                <div class="section" id="icons">
+                    <h4 class="section-subtitle">CREDITS</h4>
+                    <h2 class="section-title">Icons</h2>
+                    <p>
+                        This template using <a href="https://ionicons.com" target="_blank">Ionicons v5</a>. You can
+                        check all
+                        the icons on the Ionicons website.
+                    </p>
+                </div>
+
+                <div class="section" id="fonts">
+                    <h4 class="section-subtitle">CREDITS</h4>
+                    <h2 class="section-title">Fonts</h2>
+                    <p>
+                        <a href="https://fonts.google.com/specimen/Inter" target="_blank">Inter on Google Fonts</a>
+                    </p>
+                </div>
+
+                <div class="section" id="plugins">
+                    <h4 class="section-subtitle">CREDITS</h4>
+                    <h2 class="section-title">Plugins</h2>
+                    <table class="table">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th scope="col">Plugin</th>
+                                <th scope="col">Website</th>
+                                <th scope="col">Licence</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Bootstrap 4</td>
+                                <td><a href="https://getbootstrap.com/" target="_blank">https://getbootstrap.com/</a>
+                                </td>
+                                <td>MIT</td>
+                            </tr>
+                            <tr>
+                                <td>jQuery</td>
+                                <td><a href="https://jquery.com/" target="_blank">https://jquery.com/</a></td>
+                                <td>MIT</td>
+                            </tr>
+                            <tr>
+                                <td>Popper JS</td>
+                                <td><a href="https://popper.js.org/" target="_blank">https://popper.js.org/</a></td>
+                                <td>MIT</td>
+                            </tr>
+                            <tr>
+                                <td>Owl Carousel 2</td>
+                                <td><a href="https://owlcarousel2.github.io/OwlCarousel2/"
+                                        target="_blank">https://owlcarousel2.github.io/OwlCarousel2/</a></td>
+                                <td>MIT</td>
+                            </tr>
+                            <tr>
+                                <td>Ionicons v5</td>
+                                <td><a href="https://ionicons.com" target="_blank">https://ionicons.com</a></td>
+                                <td>MIT</td>
+                            </tr>
+                            <tr>
+                                <td>jQuery Circle Progress</td>
+                                <td><a href="https://github.com/kottenator/jquery-circle-progress"
+                                        target="_blank">https://github.com/kottenator/jquery-circle-progress</a></td>
+                                <td>MIT</td>
+                            </tr>
+                            <tr>
+                                <td>jQuery Countdown</td>
+                                <td><a href="http://hilios.github.io/jQuery.countdown/"
+                                        target="_blank">http://hilios.github.io/jQuery.countdown/</a></td>
+                                <td>MIT</td>
+                            </tr>
+                            <tr>
+                                <td>ServiceWorker Cookbook</td>
+                                <td><a href="https://github.com/mozilla/serviceworker-cookbook"
+                                        target="_blank">https://github.com/mozilla/serviceworker-cookbook</a></td>
+                                <td>MIT</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="section" id="support">
+                    <h4 class="section-subtitle">Need Help?</h4>
+                    <h2 class="section-title">Support</h2>
+                    <p>
+                        Contact with us for your feedbacks or questions.
+                    </p>
+                    <strong>How can you contact to us?</strong>
+                    <ul>
+                        <li>
+                            You can contact us from the <a
+                                href="https://themeforest.net/item/mobilekit-bootstrap-4-based-mobile-ui-kit-template/25384264/support"
+                                target="_blank">support tab</a> of the template.
+                        </li>
+                        <li>
+                            Fell free to ask anything about our template.
+                        </li>
+                    </ul>
+                </div>
+
+
+            </div>
+        </div>
+        <!-- * content -->
+
+    </div>
+    <!-- * page wrapper -->
+
+    <!-- ///////////// Js Files ////////////////////  -->
+    <!-- Jquery -->
+    <script src="assets/js/lib/jquery-3.4.1.min.js"></script>
+    <!-- Bootstrap-->
+    <script src="assets/js/lib/popper.min.js"></script>
+    <script src="assets/js/lib/bootstrap.min.js"></script>
+    <!-- Base Js File -->
+    <script src="assets/js/base.js"></script>
+
+
+</body>
+
+</html>
