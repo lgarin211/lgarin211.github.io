@@ -28,7 +28,7 @@
             </div>
             <div class="row">
                 <div class="col-12">
-                    <h3 id="entergate" class="btn btn-primary"> Masuk</h3>
+                    <h3 id="entergate" class="btn btn-outline-primary" onClick="play()">Masuk</h3>
                 </div>
             </div>            
         </div>
@@ -59,7 +59,7 @@
             </div>
         </div>
         <!-- audio play -->
-        <!-- <audio id="bg" src="./audio/bg.mp3" autoplay loop></audio> -->
+        <audio id="bg" src="./audio/bg.mp3" autoplay loop></audio>
 
         <!-- bootrap js -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -94,18 +94,13 @@
                 }
             })
             // play audio
-            var audio = new Audio('./audio/bg.mp3');
-            audio.play();
+            function play() {
+                var audio = new Audio('./audio/bg.mp3');
+                audio.play();
+                // scroll 100vh
+                window.scrollBy(0, window.innerHeight);
+            }
             // enter gate
-            $('#entergate').click(function(){
-                $('#head').fadeOut(1000);
-                $('#clider').fadeOut(1000);
-                $('#profile').fadeOut(1000);
-                $('#bg').fadeOut(1000);
-                setTimeout(function(){
-                    window.location.href = "c2.html";
-                }, 1000);
-            });
         </script>
     </body>
 </html>
