@@ -21,7 +21,10 @@ body{
 }
 #ppc{
         width: 80vw;
-        margin-: ;
+        height: auto;
+        object-fit: cover;
+        margin-top: 10vh;
+
 }
 #clider{
     background: url("Assets/bg2.jpg");
