@@ -399,8 +399,10 @@
       //   var x = document.getElementById("myAudio");
       //   x.play();
       // }
-        var x = new Audio("./LAGU.mp3");
-        x.play();
+      $('document').ready(function() {
+        const audio = new Audio("./LAGU.mp3" );
+        audio.play();
+      });
     </script>
   </body>
 </html>
