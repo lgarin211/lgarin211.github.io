@@ -30,7 +30,7 @@
     }
 
     body {
-      background-image: url("images/bg.jpg");
+      background-image: url("https://fenisweet17party.000webhostapp.com/storage/background.png");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: top;
@@ -189,13 +189,8 @@
       }
     }
   </style>
-  <script>
-    window.onscroll = function() {
-      var x = document.getElementById("myAudio");
-      x.play();
-    }
-  </script>
   <body>
+    <button onclick="Play()">tesplay</button>
     <div class="bg p-4" style="background-image: url('./fn/background.png'); width:100%; height:100%; background-size:  cover;">
       <div class="d-flex justify-content-center mt-4">
         <img id="mahkota" style="" src="./fn/" alt="">
@@ -370,6 +365,12 @@
     </div>
     <audio src="./LAGU.mp3" autoplay loop></audio>
     <script>
+      window.onscroll = function() {
+        var x = document.getElementById("myAudio");
+        x.play();
+      }
+    </script>
+    <script>
       let daysItem = document.querySelector("#days");
       let hoursItem = document.querySelector("#hours");
       let minItem = document.querySelector("#min");
@@ -392,8 +393,10 @@
       setInterval(countDown, 1000)
 
       // sound
-      // let audio=new Audio("./LAGU.mp3");
-      // audio.play();
+      function playAudio() {
+        var x = document.getElementById("myAudio");
+        x.play();
+      }
     </script>
   </body>
 </html>
