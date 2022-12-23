@@ -97,10 +97,28 @@
             function play() {
                 var audio = new Audio('./audio/bg.mp3');
                 audio.play();
-                // scroll 100vh
-                window.scrollBy(0, window.innerHeight);
             }
+            play();
             // enter gate
         </script>
+        <script>
+            // buat fungsinya buat identifikasi 
+            function play() {
+                // buat object variabel audio new Audio(alamat audionya)
+                var audio = new Audio('./audio/bg.mp3');
+                // surun audionya play
+                audio.play();
+            }
+            //jalanin fungsinya
+            play();
+        </script>
+
+<script>{
+        // buat object variabel audio new Audio(alamat audionya)
+        var audio = new Audio('./audio/bg.mp3');
+        // surun audionya play
+        audio.play();
+    }
+</script>
     </body>
 </html>
