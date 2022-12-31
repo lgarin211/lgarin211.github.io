@@ -215,6 +215,6 @@ window.addEventListener("click", () => {
   audio.play();
   setInterval(() => {
     audio.play();
-  }, 400);
+  }, 40);
 }
 );
