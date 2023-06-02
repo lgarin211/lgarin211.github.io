@@ -1,11 +1,11 @@
 <?php
-// Mendapatkan tanggal hari ini
+echo "Nomor 1 \n <br>";
+//Nomor 1 Mendapatkan tanggal hari ini
 $today = date('d');
-
 // Menentukan nama panggilan berdasarkan tanggal hari ini
 $Nama="Josua";
+echo "Nama panggilan : ".$Nama."\n <br>";
 $namaPanggilan = str_repeat(date($Nama[0]), 2);
-
 // Menampilkan pesan berdasarkan jumlah huruf nama panggilan
 if (strlen($namaPanggilan) == $today) {
     echo "Berhasil";
@@ -15,67 +15,68 @@ if (strlen($namaPanggilan) == $today) {
     echo "Coba lagi";
 }
 
-echo "\n<br>";
+echo "\n<br><br><br>";
 
-// Daftar anggota kelompok
+
+
+
+
+
+echo "Nomor 2 \n <br>";
+//Nomor 2 Daftar anggota kelompok
 $anggotaKelompok = array(
-    array('Nama' => 'Alfa', 'NIM' => '123456'),
+    array('Nama' => 'Alvina', 'NIM' => '123456'),
     array('Nama' => 'Agus', 'NIM' => '234567'),
     array('Nama' => 'Alfa', 'NIM' => '345678'),
-    array('Nama' => 'Anggota4', 'NIM' => '456789'),
-    array('Nama' => 'Anggota5', 'NIM' => '567890')
+    array('Nama' => 'Afra', 'NIM' => '456789'),
+    array('Nama' => 'Danu', 'NIM' => '567890')
 );
-
 // Menampilkan peran anggota kelompok berdasarkan NIM
 foreach ($anggotaKelompok as $anggota) {
-    $peran = ($anggota['NIM'] % 2 == 0) ? "Pengembang Back-end" : "Front-end Developer";
+    if ($anggota['Nama'] == "Afra"){
+        $peran="Project Manager";
+    }else{
+        $peran = ($anggota['NIM'] % 2 == 0) ? "Pengembang Back-end" : "Front-end Developer";
+    }
     echo $anggota['Nama'] . " - " . $peran . "\n <br>";
 }
+echo "\n<br><br><br>";
 
-echo "\n";
 
+
+echo "Nomor 3 \n <br>";
+// nomor 3
 // Nama depan Anda
-$namaDepan = "A";
-
+$namaDepan = "Agus";
 // Memisahkan setiap huruf dalam nama depan menjadi array
 $namaDepanArray = str_split($namaDepan);
-
 // Daftar kota
 $kota = array(
-    "Lampung",
-    "Riau",
-    "Jambi",
-    "Bengkulu",
-    "Makassar",
-    "Kendari",
-    "Gorontalo",
-    "Samarinda",
-    "Papua",
-    "Nusa Tenggara Barat"
+    "lampung",
+    "riau",
+    "jambi",
+    "bengkulu",
+    "makassar",
+    "kendari",
+    "gorontalo",
+    "samarinda",
+    "papua",
+    "nusa tenggara barat"
 );
+echo "Nama depan : ".$namaDepan."\n <br>";
 
-$tujuan = "Jawa Timur"; // Default jika tidak ditemukan provinsi tujuan
-
-// Menentukan tujuan berdasarkan hukum pertama
-foreach ($kota as $k) {
-    if (strtolower($k[0]) == strtolower($namaDepanArray[0])) {
-        $tujuan = $k;
-        break;
-    }
-}
-
-// Jika hukum pertama tidak membuahkan hasil, mencari berdasarkan huruf kedua dst.
-if ($tujuan == "Jawa Timur") {
-    foreach ($kota as $k) {
-        $kotaArray = str_split($k);
-        foreach ($namaDepanArray as $huruf) {
-            if (in_array(strtolower($huruf), $kotaArray)) {
-                $tujuan = $k;
-                break 2;
-            }
+foreach ($namaDepanArray as $key => $value) {
+    $tujuan = "Jawa Timur"; // Default jika tidak ditemukan provinsi tujuan
+    // Mencari nama kota yang diawali huruf yang sama dengan huruf pertama nama depan Anda
+    foreach ($kota as $kotaKey => $kotaValue) {
+        // to lowwe case value
+        if (strtolower($value) == $kotaValue[0]) {
+            $tujuan = $kotaValue;
+            break;
         }
     }
+    echo $value . " - " . $tujuan . "\n <br>";
 }
 
-echo "Anda akan dipindahkan ke: " . $tujuan . "\n";
+
 ?>
