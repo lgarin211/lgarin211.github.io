@@ -3,7 +3,7 @@
 $servername = "103.219.251.244";
 $username = "lahorasm_root";
 $password = "@Lgarin211";
-$dbname = "lahorasm_root2";
+$dbname = "lahorasm_root";
 
 try {
     // Membuat koneksi
