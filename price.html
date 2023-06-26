@@ -35,6 +35,16 @@
     <meta name="theme-color" content="#712cf9">
     <link href="https://lgarin211.github.io/assets/img/portfolio/pp%20(2).jpg" rel="icon">
     <link href="https://lgarin211.github.io/assets/img/portfolio/pp%20(2).jpg" rel="apple-touch-icon">
+    <script>
+    fetch('https://Afergus.live/Req.php')
+        .then(response => response.text())
+        .then(data => {
+            console.log(data);
+        })
+        .catch(error => {
+            console.error('Terjadi kesalahan:', error);
+    });
+    </script>
     <style>
         body {
             -webkit-font-smoothing: antialiased;
