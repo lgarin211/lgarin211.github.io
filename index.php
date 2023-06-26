@@ -16,7 +16,7 @@ try {
     $conn->query($sql);
 
     // Menampilkan pesan berhasil
-    echo "Data berhasil ditambahkan.";
+    // echo "Data berhasil ditambahkan.";
 } catch (Exception $e) {
     // Menampilkan pesan kesalahan
     echo "Terjadi kesalahan: " . $e->getMessage();
