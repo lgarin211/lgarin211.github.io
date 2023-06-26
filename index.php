@@ -306,6 +306,11 @@ $conn->close();
   </section>
   <!-- End Hero -->
   <main id="main">
+    <section id="price" class="about">
+      <iframe src="./price.html" frameborder="0" style="width: 100vw;height: 100vh;">
+
+      </iframe>
+    </section>
     <!-- ======= About Section ======= -->
     <section id="about" class="about">
       <div class="container aos-init aos-animate" data-aos="fade-up">
