@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body style="min-height: 100dvh;" class="bg-dark">
+    <div class="container">
+        <div class="row justify-content-center" id="evelix">
+            <iframe class="okoye" src="https://www.myinstants.com/instant/wrong/embed/" frameborder="0" scrolling="no"></iframe>
+            <iframe class="okoye" src="https://www.myinstants.com/instant/correct-answer-gameshow/embed/" frameborder="0" scrolling="no"></iframe>
+            <iframe class="okoye" src="https://www.myinstants.com/instant/vine-boom-sound-70972/embed/" frameborder="0" scrolling="no"></iframe>
+        </div>
+        <div class="row">
+            <div class="col-12 form-control justify-content-center row">
+                <input type="text" class="form-control col-12" id="sound" placeholder="Enter sound name">
+                <button class="btn btn-primary col-12" id="search">Search</button>
+                <button class="btn btn-danger col-12" id="remove">Reset</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script>
+
+        // cek if sessionstoreage is ready
+        if (sessionStorage.getItem('sound')) {
+            document.getElementById('evelix').innerHTML = sessionStorage.getItem('sound');
+        }else{
+            console.log('no session storage');
+        }
+
+        // get all document by name ifream and add class col-4
+        var iframes = document.getElementsByTagName('iframe');
+        for (var i = 0; i < iframes.length; i++) {
+            iframes[i].classList.add('col-6');
+        }
+
+        // get the search button and add event listenerfunction
+        function searchSound() {
+            var sound = document.getElementById('sound').value;
+            var part = `<iframe class="okoye" src="https://www.myinstants.com/instant/${sound}/embed/" frameborder="0" scrolling="no"></iframe>`;
+            document.getElementById('evelix').innerHTML += part;            
+            var avd=document.getElementById('evelix').innerHTML
+            
+            sessionStorage.setItem('sound', avd);
+        }
+
+        //reset sessionStorage
+        function resetSound() {
+            sessionStorage.removeItem('sound');
+            document.getElementById('evelix').innerHTML = '';
+        }
+
+        //adding button event listener
+        document.getElementById('search').addEventListener('click', searchSound);
+        document.getElementById('remove').addEventListener('click', resetSound);
+    </script>
+    </body>
+
+</html>
