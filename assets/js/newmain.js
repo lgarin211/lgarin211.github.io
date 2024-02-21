@@ -38,9 +38,13 @@ document.addEventListener("DOMContentLoaded", function () {
     ['CARD FOR ALL', './assets/img/portfolio/CARDAPPR.png', 'web', 'KARTU UCAPAN SELAMAT DENGAN MUSIC'],
     ['WEB JENSHIN', './assets/img/portfolio/JENSIN.png', 'web', 'WEBSITE JENSHIN IMPACT TUGAS HCI'],
     ['JAVA PROJECT', './assets/img/portfolio/JAVAOOP.png', 'Desktop', 'APLIKASI KASIR SEDERHANA'],
-    ['DKAMAR MOBILE', 'https://play-lh.googleusercontent.com/zkap_ztciLrBryUNUlcTWcFRnIhrhXsI30J11acs3NJ8Jv5zpmzh1DbfH4dE5dsTAg=w2560-h1440-rw', 'App', 'APLIKASI AI Kamar'],
+    ['DKAMAR MOBILE', 'https://play-lh.googleusercontent.com/zkap_ztciLrBryUNUlcTWcFRnIhrhXsI30J11acs3NJ8Jv5zpmzh1DbfH4dE5dsTAg=w2560-h1440-rw', 'App web', 'APLIKASI AI Kamar'],
     ['BANK CINTA DAMAI', 'https://play-lh.googleusercontent.com/RAky5qScxsK1mZDAmvk0-9KZiza7XC6Uim_A7eKy1_uBrNNTkBKLhxJXGRJyhfYMiufj=w2560-h1440-rw', 'App', 'APLIKASI Kamar Simpel'],
     ['AI EYE', './assets/img/portfolio/4.png', 'App', 'APLIKASI AI EYES'],
+    ['PO', 'https://play-lh.googleusercontent.com/9MwEbQpzdkDVKrxqVZ-pzlDREr9C_p815GlTzNRNWbEeD14gAyLkL1QiOkZ6JBsgfJk=w2560-h1440-rw', 'App', 'APLIKASI Presensi'], 
+    ['OTPKAMI', './assets/img/portfolio/aP (1).png', 'web', 'APLIKASI Penerimaan OTP'],
+    ['PT. BAHTERA TULLUS KARYA','./assets/img/portfolio/aP (2).png','web','WEBSITE PT. BAHTERA TULLUS KARYA'],
+    ['Eliteblockchain','./assets/img/portfolio/aP (3).png','web','WEBSITE Eliteblockchain'],
   ]
   van = van.sort(() => Math.random() - 0.5)
   for (let i = 0; i < van.length; i++) {
