@@ -1,0 +1,42 @@
+import requests
+import json
+
+# Username GitHub
+username = "lgarin211"
+
+# URL API
+url_template = f"https://api.github.com/users/{username}/repos"
+
+# Hasil repositori
+all_repos = []
+
+# Loop untuk mengambil semua halaman
+for page in range(1, 3):  # Dua halaman (untuk 120 repo)
+    response = requests.get(url_template, params={"page": page, "per_page": 100})
+    if response.status_code == 200:
+        repos = response.json()
+        all_repos.extend(repos)
+    else:
+        print(f"Error: {response.status_code}, {response.json()}")
+
+# Menyortir repositori berdasarkan jumlah bintang (stars)
+sorted_repos = sorted(all_repos, key=lambda repo: repo['stargazers_count'], reverse=True)
+
+# Membuat data untuk disimpan
+output_data = [
+    {
+        "name": repo['name'],
+        "stars": repo['stargazers_count'],
+        "url": repo['html_url'],
+        "description": repo['description'],
+        "language": repo['language']
+    }
+    for repo in sorted_repos
+]
+
+# Menyimpan ke file JSON
+output_filename = "sorted_repos.json"
+with open(output_filename, "w") as json_file:
+    json.dump(output_data, json_file, indent=4)
+
+print(f"Repositori berhasil disimpan ke file: {output_filename}")
