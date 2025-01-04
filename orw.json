@@ -1,0 +1,289 @@
+{
+  "contact": {
+    "address": "Tajur, Bogor, Jawa Barat",
+    "phone": "082111424592",
+    "email": "lagustinus211@gmail.com",
+    "linkedin": "www.linkedin.com/in/agustinustobing",
+    "website": "lgarin211.github.io"
+  },
+  "top_skills": [
+    "JavaScript",
+    "Python (Bahasa Pemrograman)",
+    "Pengembangan Software"
+  ],
+  "name": "Agustinus Pardamean Lumban Tobing",
+  "position": "PPTI BCA Batch 15 | BCA Scholarship Awardee | Undergraduate Computer Science Student at BINUS University | Programmer, Beautify The World",
+  "location": "Kota Bogor, West Java, Indonesia",
+  "summary": "Seorang profesional pemrogram web berpengalaman dengan fokus pada Rekayasa Perangkat Lunak. Ahli dalam menggunakan framework Laravel, CodeIgniter, React Javascript, dan Apache Cordova. Menguasai Moodle, WordPress, dan Amazon Web Service. Berpengalaman magang di PT BONET UTAMA, menghasilkan proyek seperti Moodle untuk pembelajaran, ecommerce untuk Akun Shopie WildanNursary, dan aplikasi inventaris untuk SMK Lab Komputer SMKN 4 Kota Bogor. Pengembang sistem template untuk CodeIgniter 3 dan proyek e-commerce menggunakan Laravel, proyek tersedia di GitHub. Kemampuan desain dengan Figma, Canva, Photoshop, dan Wondershare Video Editor. Presenter, host, dan moderator seminar dengan pengalaman di Zoom dan Google Meet. Dokumentasi aktivitas di YouTube",
+  "experience": [
+    {
+      "company": "PT Bank Central Asia Tbk (BCA)",
+      "position": "Program Pendidikan Teknik Informatika",
+      "duration": "July 2022 - Present",
+      "location": "Kota Bogor, Jawa Barat, Indonesia",
+      "description": "One of the Corporate Social Responsibility Programs is Program Pendidikan Teknik Informatika (PPTI). BCA scholarship programs are intended for qualified Senior High School or Vocational High School students."
+    },
+    {
+      "company": "projectcoid",
+      "position": "Freelance",
+      "duration": "June 2021 - Present",
+      "location": "Bogor, Jawa Barat, Indonesia",
+      "description": "berkerja dan melakukan hal yang di inginkan owner bersama project.co.id"
+    },
+    {
+      "company": "WildanNursary",
+      "position": "Full-stack Developer",
+      "duration": "August 2020 - April 2022 (1 year 9 months)",
+      "location": "Bogor, Jawa Barat, Indonesia",
+      "description": "Saya sedang mengembangkan aplikasi toko online bernama WildanNursary Proyek Menggunakan API dari Shopie dan melampirkannya ke Situs Web Resmi, Proyek Dibuat dengan CodeIgniter dan Bootstrap 3 dan saya meletakkannya di Gitbuh saya itu open source github.com/lgarin211/ws"
+    },
+    {
+      "company": "SMK Negeri 4 Bogor",
+      "position": "Web Application Developer",
+      "duration": "July 2020 - April 2022",
+      "location": "Indonesia",
+      "description": "Dalam proyek ini, saya membuat 2 sistem aplikasi untuk sekolah saya, 1 Aplikasi Pendataan Barang atau biasa disebut Inventarris, 2 Aplikasi Data Komputer untuk merekam pengguna yang menggunakan PC di sekolah"
+    },
+    {
+      "company": "SMK Negeri 4 Kota Bogor",
+      "position": "Full-stack Developer",
+      "duration": "May 2021 - June 2021 (2 months)",
+      "location": "Bogor, Jawa Barat, Indonesia",
+      "description": "Membuat Aplikasi Login Berbasis Desktop untuk medata Pengguna Komputer LAB"
+    },
+    {
+      "company": "PT Bonet Utama",
+      "position": "Web Developer",
+      "duration": "December 2020 - March 2021 (4 months)",
+      "location": "Bogor, Jawa Barat, Indonesia",
+      "description": "Saya melakukan Program Magang Sekolah di Pt Bonet Utama sebagai Web Developer"
+    }
+  ],
+  "education": [
+    {
+      "institution": "BINUS University",
+      "degree": "Bachelor's degree",
+      "duration": "July 2022 - February 2025",
+      "location": "Jakarta, Indonesia",
+      "faculti": "Computer science"
+    }
+  ],
+  "certificates": [
+    {
+      "provider": "Dicoding Indonesia",
+      "course": "Belajar Dasar Visualisasi Data",
+      "issued": "Nov 2023",
+      "expires": "Nov 2026",
+      "credential_id": "N9ZOO3K4DZG5",
+      "logo": "dicoding_logo.jpeg"
+    },
+    {
+      "provider": "Dicoding Indonesia",
+      "course": "Belajar Machine Learning untuk Pemula",
+      "issued": "Nov 2023",
+      "expires": "Nov 2026",
+      "credential_id": "1OP81GY11ZQK",
+      "logo": "dicoding_logo.jpeg"
+    },
+    {
+      "provider": "Dicoding Indonesia",
+      "course": "Memulai Pemrograman dengan Python",
+      "issued": "Nov 2023",
+      "expires": "Nov 2026",
+      "credential_id": "JLX1206GJZ72",
+      "logo": "dicoding_logo.jpeg"
+    },
+    {
+      "provider": "CODEPOLITAN",
+      "course": "Sertifikat Kelas Belajar Membangun RESTful dengan Adonis.js",
+      "issued": "Nov 2023",
+      "expires": "Nov 2026",
+      "credential_id": "RI6K3BZ",
+      "logo": "codepolitan.jpeg"
+    },
+    {
+      "provider": "CODEPOLITAN",
+      "course": "Sertifikat Kelas Algoritma dan Pemrograman Dasar",
+      "issued": "Sep 2023",
+      "expires": "Sep 2026",
+      "credential_id": "HQYB3UK",
+      "logo": "codepolitan.jpeg"
+    },
+    {
+      "provider": "CODEPOLITAN",
+      "course": "Sertifikat Kelas Belajar AJAX dan Web API",
+      "issued": "Sep 2023",
+      "expires": "Sep 2026",
+      "credential_id": "LXF1OY8",
+      "logo": "codepolitan.jpeg"
+    },
+    {
+      "provider": "CODEPOLITAN",
+      "course": "Sertifikat Kelas Belajar Bootstrap CSS Framework",
+      "issued": "Sep 2023",
+      "expires": "Sep 2026",
+      "credential_id": "0AKSGJF",
+      "logo": "codepolitan.jpeg"
+    },
+    {
+      "provider": "CODEPOLITAN",
+      "course": "Sertifikat Kelas Belajar Dasar CSS",
+      "issued": "Sep 2023",
+      "expires": "Sep 2026",
+      "credential_id": "OGY31MS",
+      "logo": "codepolitan.jpeg"
+    },
+    {
+      "provider": "CODEPOLITAN",
+      "course": "Sertifikat Kelas Belajar Dasar Express.js",
+      "issued": "Sep 2023",
+      "expires": "Sep 2026",
+      "credential_id": "D7FV2XP",
+      "logo": "codepolitan.jpeg"
+    },
+    {
+      "provider": "CODEPOLITAN",
+      "course": "Sertifikat Kelas Belajar Dasar HTML",
+      "issued": "Sep 2023",
+      "expires": "Sep 2026",
+      "credential_id": "VKGSG1Z",
+      "logo": "codepolitan.jpeg"
+    },
+    {
+      "provider": "CODEPOLITAN",
+      "course": "Sertifikat Kelas Belajar Dasar Node.js dan NPM",
+      "issued": "Sep 2023",
+      "expires": "Sep 2026",
+      "credential_id": "FNMYFLK",
+      "logo": "codepolitan.jpeg"
+    },
+    {
+      "provider": "CODEPOLITAN",
+      "course": "Sertifikat Kelas Belajar Dasar-dasar HTML dan CSS",
+      "issued": "Sep 2023",
+      "expires": "Sep 2026",
+      "credential_id": "OXSDVYK",
+      "logo": "codepolitan.jpeg"
+    },
+    {
+      "provider": "CODEPOLITAN",
+      "course": "Sertifikat Kelas Belajar JQuery Dasar",
+      "issued": "Sep 2023",
+      "expires": "Sep 2026",
+      "credential_id": "97I0HRH",
+      "logo": "codepolitan.jpeg"
+    },
+    {
+      "provider": "CODEPOLITAN",
+      "course": "Sertifikat Kelas Belajar JavaScript",
+      "issued": "Sep 2023",
+      "expires": "Sep 2026",
+      "credential_id": "JB1GWDJ",
+      "logo": "codepolitan.jpeg"
+    },
+    {
+      "provider": "CODEPOLITAN",
+      "course": "Sertifikat Kelas Belajar JavaScript Asynchronous",
+      "issued": "Sep 2023",
+      "expires": "Sep 2026",
+      "credential_id": "DFJTXQ0",
+      "logo": "codepolitan.jpeg"
+    },
+    {
+      "provider": "CODEPOLITAN",
+      "course": "Sertifikat Kelas Belajar JavaScript DOM",
+      "issued": "Sep 2023",
+      "expires": "Sep 2026",
+      "credential_id": "ONW6XGVID",
+      "logo": "codepolitan.jpeg"
+    },
+    {
+      "provider": "CODEPOLITAN",
+      "course": "Sertifikat Kelas Belajar Konsep Auth dan Implementasi di Express.js",
+      "issued": "Sep 2023",
+      "expires": "Sep 2026",
+      "credential_id": "BJPTWSM",
+      "logo": "codepolitan.jpeg"
+    },
+    {
+      "provider": "CODEPOLITAN",
+      "course": "Sertifikat Kelas Belajar Konsep OOP di JavaScript",
+      "issued": "Sep 2023",
+      "expires": "Sep 2026",
+      "credential_id": "2NNZODY",
+      "logo": "codepolitan.jpeg"
+    },
+    {
+      "provider": "CODEPOLITAN",
+      "course": "Sertifikat Kelas Belajar Membangun Aplikasi Studi Kasus Directory Listing App",
+      "issued": "Sep 2023",
+      "expires": "Sep 2026",
+      "credential_id": "KYUBOWG",
+      "logo": "codepolitan.jpeg"
+    },
+    {
+      "provider": "CODEPOLITAN",
+      "course": "Sertifikat Kelas Belajar Membuat Halaman Web Dinamis dengan Express.js dan EJS",
+      "issued": "Sep 2023",
+      "expires": "Sep 2026",
+      "credential_id": "CDAQPOL",
+      "logo": "codepolitan.jpeg"
+    },
+    {
+      "provider": "CODEPOLITAN",
+      "course": "Sertifikat Kelas Belajar Membuat Project Express.js Dengan MongoDB",
+      "issued": "Sep 2023",
+      "expires": "Sep 2026",
+      "credential_id": "2RTOFGD",
+      "logo": "codepolitan.jpeg"
+    },
+    {
+      "provider": "CODEPOLITAN",
+      "course": "Sertifikat Kelas Belajar Menggunakan MongoDB di JavaScript",
+      "issued": "Sep 2023",
+      "expires": "Sep 2026",
+      "credential_id": "9CA8H13",
+      "logo": "codepolitan.jpeg"
+    },
+    {
+      "provider": "CODEPOLITAN",
+      "course": "Sertifikat Kelas Belajar MongoDB",
+      "issued": "Sep 2023",
+      "expires": "Sep 2026",
+      "credential_id": "CBSOH1D",
+      "logo": "codepolitan.jpeg"
+    },
+    {
+      "provider": "CODEPOLITAN",
+      "course": "Sertifikat Kelas Belajar RESTful dengan Express.js",
+      "issued": "Sep 2023",
+      "expires": "Sep 2026",
+      "credential_id": "2NTZHIF",
+      "logo": "codepolitan.jpeg"
+    },
+    {
+      "provider": "CODEPOLITAN",
+      "course": "Sertifikat Kelas Belajar Relasi Data di MongoDB (Database Relationship)",
+      "issued": "Sep 2023",
+      "expires": "Sep 2026",
+      "credential_id": "BS3ZSLG",
+      "logo": "codepolitan.jpeg"
+    },
+    {
+      "provider": "CODEPOLITAN",
+      "course": "Sertifikat Kelas Fitur Baru Laravel 7",
+      "issued": "Sep 2023",
+      "expires": "Sep 2026",
+      "credential_id": "FHE09NF",
+      "logo": "codepolitan.jpeg"
+    },
+    {
+      "provider": "CODEPOLITAN",
+      "course": "Sertifikat Menggunakan Full-Text Search di MongoDB",
+      "issued": "Sep 2023",
+      "expires": "Sep 2026",
+      "credential_id": "9QJK3W3",
+      "logo": "codepolitan.jpeg"
+    }
+  ]
+}

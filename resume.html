@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Agustinus Pardamean Lumban Tobing</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+  <body class="d-flex flex-column h-100 bg-light">
+    <main class="flex-shrink-0">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+        <div class="container px-5">
+          <a class="navbar-brand" href="index.html">
+            <span class="fw-bolder text-primary">GarinPoin</span>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="resume.html">Resume</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="projects.html">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="container px-5 my-5">
+        <div class="text-center mb-5">
+          <h1 class="display-5 fw-bolder mb-0">
+            <span class="text-gradient d-inline">Resume</span>
+          </h1>
+        </div>
+        <div class="row gx-5 justify-content-center">
+          <div class="col-lg-11 col-xl-9 col-xxl-8">
+            <div class="row mb-md-4 mb-4">
+              <div class="col-0 col-md-8"></div>
+              <a class="btn btn-primary px-4 py-3 col-12 col-md-4" href="#!">
+                <div class="d-inline-block bi bi-download me-2"></div>
+                Download Resume
+              </a>
+            </div>
+
+            <section id="experiencepoin"></section>
+            <section id="Educationpoin"></section>
+            <section id="Certificates"></section>
+            <div class="pb-5"></div>
+            <section class="row justify-content-centers p-1">
+              <h2 class="col-12 text-primary fw-bolder mb-4">
+                MySkill By Github
+              </h2>
+              <div class="col-12 card shadow border-0 p-2">
+                <div class="row">
+                  <img
+                    src="https://github-readme-stats.vercel.app/api?username=lgarin211&show_icons=true&theme=default"
+                    alt=""
+                    class="img-fluid col-md-7"
+                  />
+                  <img
+                    src="https://github-readme-stats.vercel.app/api/top-langs/?username=lgarin211&theme=default"
+                    alt=""
+                    class="img-fluid col-md-5"
+                  />
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="bg-white py-4 mt-auto">
+      <div class="container px-5">
+        <div
+          class="row align-items-center justify-content-between flex-column flex-sm-row"
+        >
+          <div class="col-auto">
+            <div class="small m-0">
+              <a href="#">
+                Copyright &copy; <span id="poindomain">GarinPoin.com</span>
+                <span id="pointahun"></span>
+              </a>
+            </div>
+          </div>
+          <div class="col-auto">
+            <a class="small" href="#!">Privacy</a>
+            <span class="mx-1">&middot;</span>
+            <a class="small" href="#!">Terms</a>
+            <span class="mx-1">&middot;</span>
+            <a class="small" href="#!">Contact</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/req.js"></script>
+    <script>
+      iniresm();
+    </script>
+    <script>
+      async function loaddata() {
+        try {
+          const response = await fetch("./orw.json");
+          if (!response.ok) {
+            throw new Error("Network response was not ok");
+          }
+          return response.json();
+        } catch (error) {
+          throw error;
+        }
+      }
+      loaddata()
+        .then((data) => {
+          sessionStorage.setItem("resumepot", JSON.stringify(data));
+          loadcert();
+          loadedu();
+          loadexp();
+        })
+        .catch((err) => {
+          console.error("Terjadi kesalahan:", err);
+        });
+
+      function loadedu() {
+        data = sessionStorage.getItem("resumepot");
+        data = JSON.parse(data);
+        let eduview = ``;
+        data.education.forEach((item) => {
+          console.log(item);
+          eduview += `
+        
+        <div class="card shadow border-0 rounded-4 mb-3">
+          <div class="card-body p-5">
+            <div class="row align-items-center gx-5">
+              <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                <div class="bg-light p-4 rounded-4">
+                  <div class="text-secondary fw-bolder mb-2">
+                    ${item.duration}
+                  </div>
+                  <div class="mb-2">
+                    <div class="small fw-bolder">${item.institution}</div>
+                    <div class="small text-muted">${item.location}</div>
+                  </div>
+                  <div class="fst-italic">
+                    <div class="small text-muted">${item.degree}</div>
+                    <div class="small text-muted">${item.faculti}</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-8">
+                <div>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Delectus laudantium, voluptatem quis repellendus eaque
+                  sit animi illo ipsam amet officiis corporis sed aliquam
+                  non voluptate corrupti excepturi maxime porro fuga.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        `;
+        });
+        document.getElementById("Educationpoin").innerHTML =
+          `
+        <h2 class="text-secondary fw-bolder mb-4">Education</h2>` + eduview;
+      }
+
+      function loadexp() {
+        let data = sessionStorage.getItem("resumepot");
+        if (data) {
+          data = JSON.parse(data);
+          let expview = ``;
+          if (data.experience && data.experience.length > 0) {
+            data.experience.forEach((item) => {
+              console.log(item);
+              expview += `
+                
+        <div class="card shadow border-0 rounded-4 mb-3">
+          <div class="card-body p-5">
+            <div class="row align-items-center gx-5">
+              <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                <div class="bg-light p-4 rounded-4">
+                  <div class="text-primary fw-bolder mb-2">
+                    ${item.duration}
+                  </div>
+                  <div class="small fw-bolder">${item.position}</div>
+                  <div class="small text-muted">${item.company}</div>
+                  <div class="small text-muted">${item.location}</div>
+                </div>
+              </div>
+              <div class="col-lg-8">
+                <div>
+                  ${item.description}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        `;
+            });
+          } else {
+            expview = `
+        <div class="text-muted">No experience information available.</div>`;
+          }
+          document.getElementById("experiencepoin").innerHTML =
+            `
+              
+        <div class="d-flex align-items-center justify-content-between mb-4">
+          <h2 class="text-primary fw-bolder mb-0">Experience</h2>
+        </div>
+          ` + expview;
+        } else {
+          console.error("No resume data found in sessionStorage.");
+        }
+      }
+      let currentPage = 1;
+      const itemsPerPage = 2;
+
+      function loadcert() {
+        data = sessionStorage.getItem("resumepot");
+        data = JSON.parse(data);
+        renderPage(currentPage, data.certificates);
+      }
+
+      function renderPage(page, items) {
+        const startIndex = (page - 1) * itemsPerPage;
+        const endIndex = startIndex + itemsPerPage;
+        const paginatedItems = items.slice(startIndex, endIndex);
+        let certview = ``;
+        paginatedItems.forEach((item) => {
+          certview += `
+        
+        <div class="card shadow border-0 rounded-4 mb-2">
+          <div class="card-body p-3">
+            <div class="row align-items-center gx-5">
+              <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                <div class="position-relative p-4 rounded-4">
+                  <div class="position-absolute top-0 start-0 w-100 h-100"
+                    style="background-image: url('./assets/${item.logo}'); filter: opacity(0.2); background-size: contain; background-repeat: no-repeat; background-position: center;"
+                    onmouseover="this.style.filter='grayscale(0%)'" onmouseout="this.style.filter='opacity(0.2)'"></div>
+                  <div class="position-relative">
+                    <div class="text-primary fw-bolder mb-2">
+                      ${item.course}
+                    </div>
+                    <div class="small fw-bolder">${item.provider}</div>
+                    <div class="small text-muted">Issued: ${item.issued}</div>
+                    <div class="small text-muted">Expires: ${item.expires}</div>
+                    <div class="small text-muted">Credential ID: ${item.credential_id}</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        `;
+        });
+        const paginationControls = `
+        
+        <div class="pagination-controls d-flex justify-content-between">
+          <button class="btn btn-primary" onclick="changePage(-1)">
+            <i class="bi bi-arrow-left"></i> Prev
+          </button>
+          <span>Page ${page} of ${Math.ceil(items.length / itemsPerPage)}</span>
+          <button class="btn btn-primary" onclick="changePage(1)">
+            Next 
+            <i class="bi bi-arrow-right"></i>
+          </button>
+        </div>
+      `;
+        document.getElementById("Certificates").innerHTML =
+          `
+        <h2 class="text-secondary fw-bolder mb-4">Certificates</h2>` +
+          certview +
+          paginationControls;
+      }
+
+      function changePage(direction) {
+        const data = JSON.parse(sessionStorage.getItem("resumepot"));
+        const totalPages = Math.ceil(data.certificates.length / itemsPerPage);
+        currentPage += direction;
+        if (currentPage < 1) currentPage = 1;
+        if (currentPage > totalPages) currentPage = totalPages;
+        renderPage(currentPage, data.certificates);
+      }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/loadingpaages.js"></script>
+  </body>
+</html>
